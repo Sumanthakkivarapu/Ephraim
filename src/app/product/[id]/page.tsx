@@ -1,20 +1,21 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, use } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Music, Star, ShoppingCart, CheckCircle2, Volume2, ShieldCheck, Download, Tag, Loader2 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useRazorpay } from '@/hooks/useRazorpay';
 
-const ProductDetailPage = ({ params }: { params: { id: string } }) => {
+const ProductDetailPage = ({ params }: { params: Promise<{ id: string }> }) => {
+    const resolvedParams = use(params);
     const [coupon, setCoupon] = useState('');
     const [isApplied, setIsApplied] = useState(false);
     const { initiatePayment, loading } = useRazorpay();
 
     // Mock product data
     const product = {
-        id: params.id,
+        id: resolvedParams.id,
         title: 'Morning Raga (Bhopali) - Complete Flute Masterclass',
         description: 'A comprehensive transcription of the beautiful Raag Bhopali, perfect for morning practice. This set includes the main bandish, alaap sequences, and fast tans specifically arranged for flute. You will also get a practice guide explaining the meend (glides) and nuances of the raga.',
         price: 249,

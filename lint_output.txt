@@ -1,0 +1,88 @@
+﻿
+> flute-notes-store@0.1.0 lint
+> eslint
+
+node.exe : 
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Users\sumanth\AppDa
+ta\Roamin ...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : 
+NotSpecified: (:St    
+ring) [], RemoteExcept 
+   ion
+    + 
+FullyQualifiedErrorI   
+ d : NativeCommandError
+ 
+Oops! Something went 
+wrong! :(
+
+ESLint: 9.39.4
+
+TypeError: nextVitals 
+is not iterable
+    at file:///C:/Users
+/sumanth/OneDrive/Deskt
+op/Ephraim/eslint.confi
+g.mjs?mtime=17735974472
+57:6:6
+    at ModuleJob.run (n
+ode:internal/modules/es
+m/module_job:413:25)
+    at async onImport.t
+racePromise.__proto__ (
+node:internal/modules/e
+sm/loader:660:26)
+    at async 
+dynamicImportConfig (C:
+\Users\sumanth\OneDrive
+\Desktop\Ephraim\node_m
+odules\eslint\lib\confi
+g\config-loader.js:186:
+17)
+    at async 
+loadConfigFile (C:\User
+s\sumanth\OneDrive\Desk
+top\Ephraim\node_module
+s\eslint\lib\config\con
+fig-loader.js:276:9)
+    at async ConfigLoad
+er.calculateConfigArray
+ (C:\Users\sumanth\OneD
+rive\Desktop\Ephraim\no
+de_modules\eslint\lib\c
+onfig\config-loader.js:
+589:23)
+    at async 
+#calculateConfigArray (
+C:\Users\sumanth\OneDri
+ve\Desktop\Ephraim\node
+_modules\eslint\lib\con
+fig\config-loader.js:74
+3:23)
+    at async 
+entryFilter (C:\Users\s
+umanth\OneDrive\Desktop
+\Ephraim\node_modules\e
+slint\lib\eslint\eslint
+-helpers.js:322:5)
+    at async 
+NodeHfs.<anonymous> (fi
+le:///C:/Users/sumanth/
+OneDrive/Desktop/Ephrai
+m/node_modules/@humanfs
+/core/src/hfs.js:574:24
+)
+    at async 
+NodeHfs.walk (file:///C
+:/Users/sumanth/OneDriv
+e/Desktop/Ephraim/node_
+modules/@humanfs/core/s
+rc/hfs.js:614:3)
